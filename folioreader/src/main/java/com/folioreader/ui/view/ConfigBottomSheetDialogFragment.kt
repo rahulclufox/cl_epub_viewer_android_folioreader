@@ -79,7 +79,7 @@ class ConfigBottomSheetDialogFragment : BottomSheetDialogFragment() {
 
     private fun initViews() {
         inflateView()
-        configFonts()
+        //configFonts()
         view_config_font_size_seek_bar.progress = config.fontSize
         configSeekBar()
         selectFont(config.font, false)
@@ -169,7 +169,7 @@ class ConfigBottomSheetDialogFragment : BottomSheetDialogFragment() {
         }
     }
 
-    private fun configFonts() {
+    /*private fun configFonts() {
 
         val colorStateList = UiUtil.getColorList(
             config.currentThemeColor,
@@ -209,7 +209,7 @@ class ConfigBottomSheetDialogFragment : BottomSheetDialogFragment() {
                 override fun onNothingSelected(parent: AdapterView<*>?) {
                 }
             }
-    }
+    }*/
 
     private fun selectFont(selectedFont: String, isReloadNeeded: Boolean) {
         // parse font from name

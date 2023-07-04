@@ -39,7 +39,8 @@
     <Spinner
         android:id="@+id/view_config_font_spinner"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="10dp"
+        android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view3" />
 
@@ -50,6 +51,7 @@
         android:background="@color/grey_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
         app:layout_constraintTop_toBottomOf="@+id/view_config_font_spinner" />
 
     <ImageView
