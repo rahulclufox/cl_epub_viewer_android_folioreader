@@ -298,5 +298,4 @@ public class FolioReader {
         localBroadcastManager.unregisterReceiver(readLocatorReceiver);
         localBroadcastManager.unregisterReceiver(closedReceiver);
     }
-    //added v7 tag
 }
