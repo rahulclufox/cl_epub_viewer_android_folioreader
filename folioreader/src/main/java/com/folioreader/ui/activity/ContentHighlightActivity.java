@@ -34,8 +34,9 @@ public class ContentHighlightActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_content_highlight);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,
+                WindowManager.LayoutParams.FLAG_SECURE);
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
