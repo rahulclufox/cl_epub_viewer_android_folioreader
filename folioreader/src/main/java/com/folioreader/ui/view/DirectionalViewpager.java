@@ -1754,7 +1754,7 @@ public class DirectionalViewpager extends ViewGroup {
         if (isHorizontal()) {
             int measuredWidth = getMeasuredWidth();
             int maxGutterSize = measuredWidth / 10;
-            mGutterSize = Math.min(maxGutterSize, mDefaultGutterSize);
+            mGutterSize = 0;//Math.min(maxGutterSize, mDefaultGutterSize);
 
             // Children are just made to fill our space.
             childWidthSize = measuredWidth - getPaddingLeft() - getPaddingRight();
