@@ -2,7 +2,6 @@ package com.folioreader.ui.adapter;
 
 import android.content.Context;
 import android.text.Html;
-import android.text.Spanned;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -63,7 +62,6 @@ public class HighlightAdapter extends RecyclerView.Adapter<HighlightAdapter.High
             }
         }, 10);
 
-        Spanned spanned = Html.fromHtml(getItem(position).getContent());
         holder.content.setText(Html.fromHtml(getItem(position).getContent()));
         UiUtil.setBackColorToTextView(holder.content,
                 getItem(position).getType());
